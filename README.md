@@ -4,42 +4,46 @@ Este proyecto ha sido creado con [Create React App](https://github.com/facebook/
 
 ## Cómo arrancarlo
 
-En la carpeta del proyecto y usando el instalador de paquetes [Yarn](https://yarnpkg.com/)
+Sitúate en una consola en la carpeta del proyecto y usando el instalador de paquetes [Yarn](https://yarnpkg.com/).
+
+### `yarn`
+
+Instala los paquetes necesarios para que la aplicación funcione.
 
 ### `yarn start`
 
-Lanzará la aplicación en modo desarrollo
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Lanzará la aplicación en modo desarrollo en en enlace [http://localhost:3000](http://localhost:3000).
+También podrás ver errores en la consola.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esto correrá todos los tests y te indicará si son correctos.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Construye la aplicación optimizada para su uso en producción.
+En la sección [deployment](https://facebook.github.io/create-react-app/docs/deployment) hay más información sobre deploy de una app creada con CRA.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Librerías usadas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `react-router`, `react-router-dom`\
+  Gestión de enrutamiento en una aplicación SPA.
+- `redux`, `redux-saga`, `reselect`, `@reduxjs/toolkit`\
+  Gestión de estado.
+- `react-toastify`\
+  Notificaciones pop-up.
 
-### `yarn eject`
+## Estructura del proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+He separado la aplicación en distintas carpetas dentro de **src**.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`app` se encuentra el componente principal de la aplicación y las dos rutas
+`components` para los componentes reutilizables
+`helpers` para las funciones y la lista de rutas
+`models` para los tipos de Typescript
+`service` para los helpers para las llamadas a la API
+`store` para la store de redux y su reducer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Problemas
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+No he podido conseguir todo el coverage que quería por falta de tiempo (motivos personales).
