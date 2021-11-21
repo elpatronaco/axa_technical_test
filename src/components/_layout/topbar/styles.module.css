@@ -1,0 +1,23 @@
+.topbar_wrapper {
+  height: var(--top-height);
+  border-bottom: 1px solid var(--topbar-bottom-border);
+  padding: var(--topbar-padding);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--topbar-padding);
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  background-color: var(--main-bg);
+}
+
+.logo {
+  height: 2rem;
+  width: auto;
+}
+
+.searchbox_container {
+  width: 20rem;
+}

@@ -1,0 +1,26 @@
+.listitem_container {
+  padding: 1rem;
+  border-radius: 10%;
+  box-shadow: 0 5px 5px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  background-color: var(--main-bg);
+}
+
+.listitem_container:hover {
+  box-shadow: 0 7px 10px var(--shadow);
+  cursor: pointer;
+}
+
+.thumbnail {
+  height: 5rem;
+  width: fit-content;
+  max-width: fit-content;
+}
+
+.name {
+  text-decoration: none;
+}

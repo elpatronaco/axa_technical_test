@@ -1,0 +1,23 @@
+html {
+  --main-bg: rgb(253, 253, 253);
+  --bg: rgb(243, 243, 243);
+  --loader-border: rgb(204, 204, 204);
+  --input-border: rgb(206, 198, 198);
+  --topbar-height: 4.5rem;
+  --topbar-bg-color: rgb(233, 233, 233);
+  --topbar-bottom-border: rgb(211, 211, 211);
+  --topbar-padding: 2rem;
+  --shadow: rgb(221, 221, 221);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.2em;
+}

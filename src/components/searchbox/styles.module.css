@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  min-width: 4rem;
+  height: 1.2rem;
+  border-radius: 30px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1em;
+  border: 1px solid var(--input-border);
+}
+
+.inputWrapper {
+  position: relative;
+  direction: ltr;
+}
+
+.searchIcon {
+  margin-left: 30px;
+}
+
+.clearIcon {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+
+.searchIcon:hover,
+.clearIcon:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 0 2rem 0 2rem;
+  height: calc(100% - var(--top-height));
+}
