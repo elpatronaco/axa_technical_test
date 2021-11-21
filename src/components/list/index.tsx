@@ -7,6 +7,13 @@ interface IListProps {
 }
 
 export default function List({ gnomes }: IListProps) {
+  if (!gnomes.length)
+    return (
+      <div className={styles.notfound_wrapper}>
+        <h3 className={styles.notfound}>No hay ningún resultado</h3>
+      </div>
+    )
+
   return (
     <div className={styles.list_container}>
       {gnomes.map(item => (

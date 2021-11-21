@@ -1,6 +1,7 @@
 .carousel_wrapper {
   background-color: var(--bg);
-  /* height: calc(100% - var(--topbar-height)); */
+  padding: 0 4rem 1.5rem 4rem;
+  flex: 1;
 }
 
 .spinner_wrapper {
@@ -11,10 +12,19 @@
   align-items: center;
 }
 
+.filters_container {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
 .carousel_card {
-  margin: 6rem 4rem 0 4rem;
   box-shadow: 12px 0 15px -4px var(--shadow), -12px 0 8px -4px var(--shadow);
   background-color: var(--main-bg);
+  overflow-y: scroll;
+  height: 78vh;
 }
 
 @media screen and (max-width: 720px) {

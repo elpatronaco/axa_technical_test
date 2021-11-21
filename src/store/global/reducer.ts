@@ -1,4 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit'
+import { CONSTANTS } from '../../helpers/enum'
 import { IGnome } from '../../models/gnome'
 import { GLOBALACTIONS } from './actions'
 
@@ -7,13 +8,15 @@ export interface IGlobalReducer {
   selGnome: IGnome | null
   loading: boolean
   page: number
+  itemsPerPage: number
 }
 
 const initState: IGlobalReducer = {
   gnomes: [],
   selGnome: null,
   loading: false,
-  page: 1
+  page: 1,
+  itemsPerPage: CONSTANTS.ITEMSXPAGE
 }
 
 export const globalReducer = createReducer(initState, builder =>
@@ -30,7 +33,8 @@ export const globalReducer = createReducer(initState, builder =>
     .addCase(GLOBALACTIONS.FETCHGNOMES.success, (state, { payload }) => ({
       ...state,
       loading: false,
-      gnomes: payload
+      gnomes: payload,
+      page: 1
     }))
     .addCase(GLOBALACTIONS.SELECTGNOME, (state, action) => {
       if (!state.gnomes.length) return state

@@ -10,3 +10,7 @@ export enum LANGS {
 export enum KEYS {
   LOCALE = 'locale'
 }
+
+export const CONSTANTS = {
+  ITEMSXPAGE: 50
+}

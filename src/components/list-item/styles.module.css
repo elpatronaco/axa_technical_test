@@ -1,3 +1,7 @@
+.link {
+  text-decoration: none;
+}
+
 .listitem_container {
   padding: 1rem;
   border-radius: 10%;
@@ -6,12 +10,15 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  height: 8rem;
   text-align: center;
   background-color: var(--main-bg);
+  min-width: fit-content;
 }
 
 .listitem_container:hover {
-  box-shadow: 0 7px 10px var(--shadow);
+  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: 0 7px 11px var(--shadow);
   cursor: pointer;
 }
 
@@ -22,5 +29,5 @@
 }
 
 .name {
-  text-decoration: none;
+  color: var(--text-1);
 }

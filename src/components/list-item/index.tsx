@@ -8,7 +8,7 @@ interface IListItemProps {
 
 export default function ListItem({ gnome }: IListItemProps) {
   return (
-    <Link to={`/${gnome.id}`}>
+    <Link to={`/${gnome.id}`} className={styles.link}>
       <div className={styles.listitem_container}>
         <img
           className={styles.thumbnail}

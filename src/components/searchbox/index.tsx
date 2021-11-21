@@ -36,11 +36,13 @@ export default function Searchbox({
           onChange={handleTextChange}
           placeholder={placeholder}
         />
-        <FaTimesCircle
-          className={styles.clearIcon}
-          size={12}
-          onClick={handleClear}
-        />
+        {text.length ? (
+          <FaTimesCircle
+            className={styles.clearIcon}
+            size={12}
+            onClick={handleClear}
+          />
+        ) : null}
       </div>
       <FaSearch
         className={styles.searchIcon}

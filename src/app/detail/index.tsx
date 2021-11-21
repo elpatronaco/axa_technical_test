@@ -20,8 +20,8 @@ function PropertiesList({
 }: {
   arr: Array<string | number>
   property: string
-}): ReactElement {
-  if (!arr.length) return <></>
+}): ReactElement | null {
+  if (!arr.length) return null
 
   return (
     <>
@@ -66,7 +66,7 @@ export default function Detail(): ReactElement {
     )
 
   return (
-    <div className={styles.detail_wrapper}>
+    <section className={styles.detail_wrapper}>
       <div className={styles.detail_inner_wrapper}>
         <div className={styles.image_container}>
           <img
@@ -78,7 +78,7 @@ export default function Detail(): ReactElement {
         <div className={styles.details_container}>
           <h1>{selGnome.name}</h1>
           <hr />
-          <Property property="edad" el={`${selGnome.age} y/o`} />
+          <Property property="edad" el={`${selGnome.age} años`} />
           <Property property="peso" el={`${selGnome.weight.toFixed(2)} kg`} />
           <Property property="altura" el={`${selGnome.height.toFixed(2)} cm`} />
           <Property property="color del pelo" el={selGnome.hair_color} />
@@ -86,6 +86,6 @@ export default function Detail(): ReactElement {
           <PropertiesList property="amigos" arr={selGnome.friends} />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

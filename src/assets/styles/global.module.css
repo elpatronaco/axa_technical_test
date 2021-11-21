@@ -8,10 +8,20 @@ html {
   --topbar-bottom-border: rgb(211, 211, 211);
   --topbar-padding: 2rem;
   --shadow: rgb(221, 221, 221);
+  --text-1: rgb(27, 27, 27);
+  --text-2: rgb(82, 82, 82);
+  --scrollbar: #bdbdbd;
+  --scrollbar-hover: #adadad;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
+
+  margin: 0;
+}
+
+body {
+  margin: 0;
 }
 
 h2 {
@@ -20,4 +30,23 @@ h2 {
 
 h4 {
   font-size: 1.2em;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  scroll-padding: 50px 0 0 50px;
+}
+::-webkit-scrollbar-track {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid #fafafa;
+  background-color: var(--scrollbar);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: background-color 200ms ease-in-out;
+  background-color: var(--scrollbar-hover);
 }

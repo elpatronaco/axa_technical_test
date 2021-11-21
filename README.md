@@ -1,15 +1,14 @@
-# Getting Started with Create React App
+# Prueba técnica AXA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Cómo arrancarlo
 
-In the project directory, you can run:
+En la carpeta del proyecto y usando el instalador de paquetes [Yarn](https://yarnpkg.com/)
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Lanzará la aplicación en modo desarrollo
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
