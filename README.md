@@ -37,12 +37,12 @@ En la sección [deployment](https://facebook.github.io/create-react-app/docs/dep
 
 He separado la aplicación en distintas carpetas dentro de **src**.
 
-`app` se encuentra el componente principal de la aplicación y las dos rutas
-`components` para los componentes reutilizables
-`helpers` para las funciones y la lista de rutas
-`models` para los tipos de Typescript
-`service` para los helpers para las llamadas a la API
-`store` para la store de redux y su reducer
+- `app` se encuentra el componente principal de la aplicación y las dos rutas
+- `components` para los componentes reutilizables
+- `helpers` para las funciones y la lista de rutas
+- `models` para los tipos de Typescript
+- `service` para los helpers para las llamadas a la API
+- `store` para la store de redux y su reducer
 
 ## Problemas
 
